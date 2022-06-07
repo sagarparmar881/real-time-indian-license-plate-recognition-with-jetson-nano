@@ -3,29 +3,25 @@
 # Real-Time License Plate Recognition with Jetson Nano
 ## _For Indian License Plates_
 
-This repository provides you with a detailed guide on how to build a real-time license plate detection and recognition system. The source code of the repository implemented on Jetson Nano reached 40 FPS.
+This repository is of a project named real-time indian license plate detection and recognition system. The source code of the repository implemented on Jetson Nano reached 40 FPS.
 
 <div align='center'>
-  <img src="./doc/images/ocr_result.gif" width="60%">
+  <img src="./doc/images/gif-recognition.gif" width="60%">
 </div>
 
-The license plate data set for this repository was collected in Vietnam. You can train your model to detect and recognize number plates by following the instructions below.
+The license plate data set for this repository was collected in India. 
 
 ### Table of Contents
 
-- [Real-time Auto License Plate Recognition with Jetson Nano](#real-time-auto-license-plate-recognition-with-jetson-nano)
-    - [Table of Contents](#table-of-contents)
+- [Real-time Indian License Plate Recognition with Jetson Nano](#real-time-auto-license-plate-recognition-with-jetson-nano)
+  - [Table of Contents](#table-of-contents)
   - [Pipeline](#pipeline)
-  - [Setting up your Jetson](./doc/jetson-setup.md)
-  - [Vienamese Plate Dataset](./doc/dataset.md)
-  - [License PLate Detection](./doc/plate-detect.md)
-  - [License Plate Recognition](./doc/plate-ocr.md)
   - [Trained Models](#trained-models)
   - [Reference](#reference)
 
 ## Pipeline
 
-This project is developed based on the pipeline described below. From a set of data collected in practice to the problem you want to solve. For details in this project, we will use the dataset of Vietnamese license plates.
+This project is developed based on the pipeline described below. From a set of data collected in practice to the problem you want to solve. For details in this project, we will use the dataset of Indian license plates.
 
 <div align='center'>
   <img src="./doc/images/from-colab-to-jetson.png" width="95%">
@@ -33,11 +29,6 @@ This project is developed based on the pipeline described below. From a set of d
 
 First, you need to prepare a labeled dataset. Then train the object detection model with the GPU on [Google Colab](https://colab.research.google.com/ "Google Colab") or your computer. Depending on the Deeplearning Framework you use, it will output the model file in different formats. With ONNX you can convert most of the above formats to a single `.onnx` format. Then with [TensorRT](https://developer.nvidia.com/tensorrt "TensorRT") installed on the [Jetpack Jetson Nano](https://developer.nvidia.com/embedded/jetpack "Jetpack"), you can run the object detection algorithms with high accuracy and FPS.
 
-## Setting up your Jetson
-
-To get started with this project you need to install your jetson nano with the libraries and source code as follows:
-
-* [Setting up your Jetson](./doc/jetson-setup.md)
 
 ## Vienamese Plate Dataset
 The project shares two sets of data for the license plate identification problem in Vietnam:
@@ -53,24 +44,18 @@ The project shares two sets of data for the license plate identification problem
 License PLate Detection results with `40 FPS` on Jetson Nano:
 
 <div align='center'>
-  <img src="./doc/images/plate_result2.gif" width="60%">
+  <img src="./doc/images/gif-detection.gif" width="60%">
 </div>
-
-License Plate Detection tutorial:
-
-* [License Plate Detection](./doc/plate-detect.md)
 
 ## License Plate Recognition
 
 License Plate Recognition results with `40 FPS` on Jetson Nano:
 
 <div align='center'>
-  <img src="./doc/images/ocr_result2.gif" width="60%">
+  <img src="./doc/images/gif-recognition.gif" width="60%">
 </div>
 
-License Plate Recognition tutorial:
 
-* [License Plate Recognition](./doc/plate-ocr.md)
 
 ## Trained Models
 
