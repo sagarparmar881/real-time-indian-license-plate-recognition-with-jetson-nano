@@ -1,8 +1,7 @@
 <img src="./doc/images/githubtitle.png" width="100%">
 
-# Real-time Auto License Plate Recognition with Jetson Nano
-
-**Visit my project on Nvidia Page:** [Jetson Community Projects](https://developer.nvidia.com/embedded/community/jetson-projects#real_time-alpr_jetson_nano)
+# Real-Time License Plate Recognition with Jetson Nano
+## _For Indian License Plates_
 
 This repository provides you with a detailed guide on how to build a real-time license plate detection and recognition system. The source code of the repository implemented on Jetson Nano reached 40 FPS.
 
