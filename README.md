@@ -30,18 +30,14 @@ This project is developed based on the pipeline described below. From a set of d
 First, you need to prepare a labeled dataset. Then train the object detection model with the GPU on [Google Colab](https://colab.research.google.com/ "Google Colab") or your computer. Depending on the Deeplearning Framework you use, it will output the model file in different formats. With ONNX you can convert most of the above formats to a single `.onnx` format. Then with [TensorRT](https://developer.nvidia.com/tensorrt "TensorRT") installed on the [Jetpack Jetson Nano](https://developer.nvidia.com/embedded/jetpack "Jetpack"), you can run the object detection algorithms with high accuracy and FPS.
 
 
-## Vienamese Plate Dataset
-The project shares two sets of data for the license plate identification problem in Vietnam:
+## Indian Plate Dataset
+The project uses data for the indian license plate identification:
 
-* [Vienamese Plate Dataset](./doc/dataset.md)
-
-* [License PLate Detection Dataset](https://drive.google.com/file/d/1KLK-DWgT3VoQH4fcTxAt2eB3sm7DGWAf/view?usp=sharing "plate dataset")
-
-* [License Plate Recognition Dataset](https://drive.google.com/file/d/1Mdtfn39Jt53u9Y81jhoM-7pdQT7B_dF6/view?usp=sharing "ocr dataset")
-          
+* [Indian Plate Dataset](https://www.kaggle.com/datasets/chiraggodaw/license-plate-dataset-resized)
+      
 ## License PLate Detection
 
-License PLate Detection results with `40 FPS` on Jetson Nano:
+License Plate Detection results with `40 FPS` on Jetson Nano:
 
 <div align='center'>
   <img src="./doc/images/gif-detection.gif" width="60%">
