@@ -1,5 +1,3 @@
-<img src="./doc/images/githubtitle.png" width="100%">
-
 # Real-Time License Plate Recognition with Jetson Nano
 ## _For Indian License Plates_
 
@@ -35,13 +33,18 @@ The project uses data for the indian license plate identification:
 
 * [Indian Plate Dataset](https://www.kaggle.com/datasets/chiraggodaw/license-plate-dataset-resized)
       
-## License PLate Detection
+## License Plate Detection
 
 License Plate Detection results with `40 FPS` on Jetson Nano:
 
 <div align='center'>
   <img src="./doc/images/gif-detection.gif" width="60%">
 </div>
+
+## Command
+```sh
+python3 detectnet-camera.py --model=./networks/indian_plate/indian_plate_ssd_v1.onnx --class_labels=./networks/indian_plate/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=csi://0 --width=640  --height=480
+```
 
 ## License Plate Recognition
 
@@ -51,7 +54,14 @@ License Plate Recognition results with `40 FPS` on Jetson Nano:
   <img src="./doc/images/gif-recognition.gif" width="60%">
 </div>
 
+## Command
+```sh
+python3 detectnet-camera.py --model=./networks/indian_plate_ocr/indian_plate_ocr_ssd_v1.onnx --class_labels=./networks/indian_plate_ocr/labels.txt --input_blob=input_0 --output_cvg=scores --output_bbox=boxes --camera=csi://0 --width=640  --height=480
 
+
+```
+
+The project uses data for the indian license plate identification:
 
 ## Trained Models
 
