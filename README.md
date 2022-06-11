@@ -1,4 +1,4 @@
-# Real-Time License Plate Recognition with Jetson Nano
+# Real-Time Indian License Plate Recognition with Jetson Nano
 ## _For Indian License Plates_
 
 This repository is of a project named real-time indian license plate detection and recognition system. The source code of the repository implemented on Jetson Nano reached 40 FPS.
