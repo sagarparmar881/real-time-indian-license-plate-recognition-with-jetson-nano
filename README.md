@@ -65,7 +65,7 @@ The project uses data for the indian license plate identification:
 
 ## Trained Models
 
- **1. License PLate Detection:**
+ **1. License Plate Detection:**
 
 |Network         |FPS |num_class|Model| 
 |----------------|----|---------|-----|
